@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import Headnav from '../navigation/Headnav';
 
-import"./Notfound.css"
+import "./Notfound.css"
 const Notfound = () => {
     return (
         <div>

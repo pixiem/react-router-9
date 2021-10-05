@@ -15,7 +15,7 @@ const Footer = () => {
             <hr className="horizontal-line" />
             <span >স্বত্ব © ২০১৫ - ২০২১ শিল্পচর্চা
                 একাডেমি কতৃক সর্বস্বত্ব সংরক্ষিত</span>
-            
+
         </div>
     );
 };

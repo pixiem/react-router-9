@@ -6,26 +6,26 @@ import ServicesCourse from '../servicesCourse/ServicesCourse';
 import "./Services.css"
 
 const Services = () => {
-    const [courses,setCourses] = useState([]);
-    useEffect(()=>{
+    const [courses, setCourses] = useState([]);
+    useEffect(() => {
         fetch('./serviceTwo.JSON')
-        .then(res => res.json())
-        .then(data => setCourses(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setCourses(data))
+    }, [])
     return (
         <>
-        <Headnav></Headnav>
-        <div className="service-section" >
-            <h1>Our Top Services</h1>
-            <div className=" course-container">
-            {
-                courses.map(course => <ServicesCourse course={course}></ServicesCourse> )
-            }
+            <Headnav></Headnav>
+            <div className="service-section" >
+                <h1>Our Top Services</h1>
+                <div className=" course-container">
+                    {
+                        courses.map(course => <ServicesCourse course={course}></ServicesCourse>)
+                    }
+                </div>
+
+
             </div>
-
-
-        </div>
-        <Footer></Footer>
+            <Footer></Footer>
         </>
     );
 };
